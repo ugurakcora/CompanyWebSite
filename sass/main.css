@@ -262,4 +262,210 @@ body {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
+
+.icon-round {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  -webkit-animation: upDown 2s ease infinite;
+          animation: upDown 2s ease infinite;
+}
+
+.icon-round__small {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.7rem;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.light-blue {
+  background-color: #d2daf6;
+}
+
+.light-green {
+  background-color: #c2e5cb;
+}
+
+.green {
+  background-color: #5ab772;
+}
+
+.light-red {
+  background-color: #edccd1;
+}
+
+.light-orange {
+  background-color: #fecaa2;
+}
+
+.logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.logo-box:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.logo-box__image {
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-box__name {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+@-webkit-keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) scaleY(1);
+            transform: translateX(0) scaleY(1);
+  }
+  40% {
+    -webkit-transform: translateX(-25%) scaleY(0.5);
+            transform: translateX(-25%) scaleY(0.5);
+  }
+  50% {
+    -webkit-transform: translateX(-50%) scaleY(1);
+            transform: translateX(-50%) scaleY(1);
+  }
+}
+
+@keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) scaleY(1);
+            transform: translateX(0) scaleY(1);
+  }
+  40% {
+    -webkit-transform: translateX(-25%) scaleY(0.5);
+            transform: translateX(-25%) scaleY(0.5);
+  }
+  50% {
+    -webkit-transform: translateX(-50%) scaleY(1);
+            transform: translateX(-50%) scaleY(1);
+  }
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10rem);
+            transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10rem);
+            transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 /*# sourceMappingURL=main.css.map */

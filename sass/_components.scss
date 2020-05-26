@@ -150,3 +150,58 @@
 }
 
 // circle icon
+.icon-round{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding: 1rem;
+    animation: upDown 2s ease infinite;
+
+    &__small{
+        width: 3rem;
+        height: 3rem;
+        padding: 0.7rem;
+        animation: none;
+    }
+}
+.light-blue{
+    background-color: $color-light-blue;
+}
+.light-green{
+    background-color: $color-light-green;
+}
+.green{
+    background-color: $color-dark-green;
+}
+.light-red{
+    background-color: $color-light-red;
+}
+.light-orange{
+    background-color: $color-light-orange;
+}
+
+
+// logo box
+.logo-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover{
+        transform: translateY(-1rem);
+    }
+
+    &__image{
+        width: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__name{
+        font-size: 2rem;
+        font-weight: $light;
+        color: $color-white;
+    }
+}
