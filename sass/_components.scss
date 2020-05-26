@@ -1,0 +1,61 @@
+//  typograpy
+
+.heading-primary{
+    font-size: 2.8rem;
+    font-weight: $light;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: $color-white;
+    animation: .7s slideLeft ease;
+}
+.heading-secondary{
+    font-size: 2.4rem;
+    font-weight: $light;
+    opacity: .6;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: $color-white;
+    animation: .7s slideRight ease;
+}
+.heading-tertiary{
+    font-family: 'Roboto Slab', 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: $medium;
+    color: $color-dark;
+}
+.heading-small{
+    font-size: 1.6rem;
+    font-weight: $medium;
+    text-transform: uppercase;
+    color: $color-dark;
+}
+
+// helpers
+.h-white{
+    color: $color-white !important;
+}
+.h-dark{
+    color: $color-dark !important;
+}
+.paragraph{
+    font-size: 1.6rem;
+    font-weight: $light;
+    color: $color-dark;
+    opacity: .6;
+    line-height: 1.8;
+}
+.p-small{
+    font-size: 1.5rem;
+    font-weight: $regular;
+    opacity: .4;
+}
+.p-regular{
+    font-weight: $regular;
+    opacity: 1;
+}
+.p-white{
+    color: $color-white;
+    opacity: .7;
+}
+
+// buttons
