@@ -1,6 +1,6 @@
 //  typograpy
 
-.heading-primary{
+.heading-primary {
     font-size: 2.8rem;
     font-weight: $light;
     letter-spacing: 0.4rem;
@@ -8,7 +8,8 @@
     color: $color-white;
     animation: .7s slideLeft ease;
 }
-.heading-secondary{
+
+.heading-secondary {
     font-size: 2.4rem;
     font-weight: $light;
     opacity: .6;
@@ -17,13 +18,15 @@
     color: $color-white;
     animation: .7s slideRight ease;
 }
-.heading-tertiary{
+
+.heading-tertiary {
     font-family: 'Roboto Slab', 'Roboto', sans-serif;
     font-size: 2.2rem;
     font-weight: $medium;
     color: $color-dark;
 }
-.heading-small{
+
+.heading-small {
     font-size: 1.6rem;
     font-weight: $medium;
     text-transform: uppercase;
@@ -31,31 +34,119 @@
 }
 
 // helpers
-.h-white{
+.h-white {
     color: $color-white !important;
 }
-.h-dark{
+
+.h-dark {
     color: $color-dark !important;
 }
-.paragraph{
+
+.paragraph {
     font-size: 1.6rem;
     font-weight: $light;
     color: $color-dark;
     opacity: .6;
     line-height: 1.8;
 }
-.p-small{
+
+.p-small {
     font-size: 1.5rem;
     font-weight: $regular;
     opacity: .4;
 }
-.p-regular{
+
+.p-regular {
     font-weight: $regular;
     opacity: 1;
 }
-.p-white{
+
+.p-white {
     color: $color-white;
     opacity: .7;
 }
 
 // buttons
+.btn {
+    font-size: 1.4rem;
+    font-weight: $regular;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 1.2rem 2.4rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 .3rem 2rem rgba($color-dark, .2);
+    transition: all .3 ease;
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 0%;
+        height: 100%;
+        background-color: rgba(255,255,255,.177);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: all .3s ease;
+    }
+    &:hover{
+        transform: translateY(-.5rem);
+        box-shadow: 0 .5rem 2rem rgba($color-dark, .2);
+
+        &::before{
+            width: 100%;
+        }
+    }
+    &:active{
+        transform: translateY(-.3rem);
+    }
+    i{
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    &__orange {
+        background-color: $color-tertiary;
+    }
+
+    &__gren {
+        background-color: $color-dark-green;
+    }
+}
+
+.btn-text{
+    font-size: 1.4rem;
+    font-weight: $regular;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-bottom: 1px solid $color-primary;
+        transform: scaleX(0);
+        transition: all .3s ease;
+    }
+    &:hover{
+        &::before{
+        transform: scaleX(1);
+
+        }
+    }
+}
+
+// circle icon
