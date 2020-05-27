@@ -40,6 +40,10 @@
     .paragraph {
         width: 70%;
     }
+
+    @media only screen and(max-width:56.25em) {
+        clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+    }
 }
 
 .divider {
@@ -52,6 +56,10 @@
     bottom: -5rem;
     left: 0;
     z-index: 1;
+
+    @media only screen and(max-width:56.25em) {
+        clip-path: polygon(0 40%, 100% 45%, 100% 100%, 0 100%);
+    }
 }
 
 .container {
@@ -65,6 +73,10 @@
         margin: 0 auto;
         text-align: center;
     }
+
+    @media only screen and(max-width:37.5em) {
+        padding: 3rem;
+    }
 }
 
 .row {
@@ -73,6 +85,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    @media only screen and(max-width:57em) {
+        flex-direction: column;
+    }
 }
 
 .d-column {
@@ -88,7 +104,7 @@
         padding-right: 0;
     }
 
-    & > * {
+    &>* {
         margin-bottom: 1.5rem;
     }
 }
@@ -96,4 +112,12 @@
 .col-1-of-3 {
     flex: 1;
     padding: 3rem;
+
+    @media only screen and(max-width:75em) {
+        padding: 2rem;
+    }
+
+    @media only screen and(max-width:57em) {
+        padding: 3rem;
+    }
 }

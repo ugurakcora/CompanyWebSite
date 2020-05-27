@@ -21,6 +21,14 @@
     position: relative;
     z-index: 1;
     animation: .7s slideUp ease;
+
+    @media only screen and(max-width:56.25em) {
+        width: 45rem;
+    }
+
+    @media only screen and(max-width:37.5em) {
+        width: 40rem;
+    }
 }
 
 .navigation {
@@ -188,7 +196,6 @@
         text-decoration: none;
         color: $color-white;
         transition: all .3s ease;
-
         span {
             margin-right: 1rem;
         }
