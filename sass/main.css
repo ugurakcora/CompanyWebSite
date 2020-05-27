@@ -8,6 +8,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -75,7 +76,7 @@ body {
 }
 
 .mr-2 {
-  margin-right: 3rem !important;
+  margin-right: 5rem !important;
 }
 
 .mr-3 {
@@ -91,7 +92,7 @@ body {
 }
 
 .ml-2 {
-  margin-right: 3rem !important;
+  margin-right: 5rem !important;
 }
 
 .ml-3 {
@@ -920,6 +921,42 @@ body {
 
 .nav__item:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.nav__item::after {
+  content: "";
+  width: 150%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  left: 25rem;
+  top: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 1600;
+}
+
+.nav__item > * {
+  position: relative;
+  z-index: 1700;
+}
+
+.nav__item:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  -webkit-box-shadow: 0 0.3rem 2rem rgba(98, 100, 130, 0.9);
+          box-shadow: 0 0.3rem 2rem rgba(98, 100, 130, 0.9);
+}
+
+.nav__item:hover > * {
+  color: #6f50ff;
+}
+
+.nav__item:hover::after {
+  -webkit-transform: translateX(-30rem);
+          transform: translateX(-30rem);
 }
 
 .nav__link {
