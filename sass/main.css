@@ -639,4 +639,107 @@ body {
   display: flex;
   margin-bottom: 2rem;
 }
+
+.form {
+  width: 100%;
+  padding: 4rem 10rem 10rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__element {
+  padding: 5rem 6rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.form__element__full {
+  width: 100%;
+  padding: 5rem !important;
+}
+
+.form__icon {
+  font-size: 2.2rem;
+  color: #626482;
+  margin-right: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.form__text {
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: #8b8b8b;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  border-bottom: 0.12rem solid rgba(98, 100, 130, 0.6);
+  padding-bottom: 0.8rem;
+  -webkit-transition: all .5 ease;
+  transition: all .5 ease;
+}
+
+.form__text:focus {
+  outline: none;
+  border-bottom: 0.12rem solid #6f50ff;
+}
+
+.form__text:focus ~ * {
+  color: #6f50ff;
+}
+
+.form__text:not(:placeholder-shown) {
+  border-bottom: 0.12rem solid #6f50ff;
+}
+
+.form__text:not(:placeholder-shown) ~ .form__label {
+  color: #b047ff;
+  -webkit-transform: translate(0, -2.5rem);
+          transform: translate(0, -2.5rem);
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__text:not(:placeholder-shown) ~ * {
+  color: #6f50ff;
+}
+
+.form ::-webkit-input-placeholder {
+  color: rgba(98, 100, 130, 0.6);
+}
+
+.form__label {
+  position: absolute;
+  left: 10rem;
+  bottom: 6rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.form__label--textarea {
+  left: 10.3rem;
+  top: 5rem;
+}
 /*# sourceMappingURL=main.css.map */
