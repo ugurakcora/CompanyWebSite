@@ -742,4 +742,194 @@ body {
   left: 10.3rem;
   top: 5rem;
 }
+
+.head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+.statistic-image {
+  width: 55rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: .7s slideUp ease;
+          animation: .7s slideUp ease;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  width: 100vw;
+}
+
+.navigation__checkbox:checked ~ .nav {
+  visibility: visible;
+  opacity: 1;
+  left: 50%;
+}
+
+.navigation__background {
+  width: 0;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6f50ff), to(#b047ff));
+  background-image: linear-gradient(to right bottom, #6f50ff, #b047ff);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  -webkit-transition: all 0.6s cubic-bezier(0.46, 0.07, 0.42, 0.84);
+  transition: all 0.6s cubic-bezier(0.46, 0.07, 0.42, 0.84);
+}
+
+.navigation__button {
+  width: 5.5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0.3rem 2rem #626482;
+          box-shadow: 0 0.3rem 2rem #626482;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  position: relative;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.navigation__button:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  -webkit-box-shadow: 0 0.5rem 2rem #626482;
+          box-shadow: 0 0.5rem 2rem #626482;
+}
+
+.navigation__button:hover > *::before {
+  top: 0.9rem;
+}
+
+.navigation__button:hover > *::after {
+  top: -0.9rem;
+}
+
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 2.7rem;
+  height: 2px;
+  background-color: #626482;
+  position: relative;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navigation__icon:before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  background-color: #626482;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.navigation__icon::after {
+  top: -0.8rem;
+}
+
+.nav {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1500;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s cubic-bezier(0.46, 0.07, 0.42 0.84) 0.2s;
+  transition: all 0.3s cubic-bezier(0.46, 0.07, 0.42 0.84) 0.2s;
+}
+
+.nav__item {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding: 1.5rem 4rem;
+  -webkit-box-shadow: 0 0.3rem 2rem rgba(98, 100, 130, 0.2);
+          box-shadow: 0 0.3rem 2rem rgba(98, 100, 130, 0.2);
+  border-radius: .5rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav__link span {
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
