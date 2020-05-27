@@ -1,0 +1,27 @@
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 .3rem 2.2rem rgba($color-dark, .15);
+    border: 1px solid rgba(178, 178, 184, .199);
+    border-radius: .5rem;
+    padding: 4rem 3.5rem 2rem 3.5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    & > * {
+        margin-bottom: 1.5rem;
+    }
+
+    &:hover{
+        transform: translateY(-1rem);
+    }
+
+    &__image{
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+}
